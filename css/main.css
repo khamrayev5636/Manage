@@ -1,0 +1,191 @@
+/* Header start */
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.header__button {
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.shownav .header__button-js {
+  background-image: url("../images/close.svg");
+}
+
+.header__nav {
+  box-shadow: 0px 10px 20px rgba(80, 86, 98, 0.4);
+  transform: translateX(200%);
+  transition: transform 1s ease;
+  max-width: 325px;
+  width: 100%;
+}
+
+.shownav .header__nav {
+  transform: translateX(0%);
+}
+
+.header__box {
+  max-width: 325px;
+  width: 100%;
+}
+
+.header__link {
+  color: #242d52;
+}
+
+.overlay {
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.33%, rgba(0, 0, 0, 0.599049) 99.79%);
+  transform: translateX(150%);
+  transition: 0.8s;
+}
+
+.overlay.shownav {
+  transform: translateX(0%);
+}
+
+/* Hero start */
+.circle {
+  background-image: url("../images/Rectangle13.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 100px) calc(50% - 220px);
+}
+
+/* Hero end */
+/* About start */
+.about {
+  background-image: url(../images/Rectangle13.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 180px) calc(50% - 540px);
+}
+
+.about__item-circle {
+  border-radius: 39px;
+}
+
+.about__item-span {
+  width: 60px;
+  height: 39px;
+  border-radius: 39px;
+}
+
+/* About end */
+/* Said start */
+.said__wrapper-card {
+  position: relative;
+}
+.said__wrapper-card::after {
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 37px);
+  background-image: url("../images/alibravo.png");
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  content: "";
+}
+
+.said__wrapper-card2::after {
+  background-image: url("../images/anisha.png");
+}
+
+.said__wrapper-card3::after {
+  background-image: url("../images/richard.png");
+}
+
+.said__wrapper-card4::after {
+  background-image: url("../images/anisha.png");
+}
+
+.slick-prev {
+  position: absolute;
+  top: 130px;
+  z-index: 1;
+  border: none;
+}
+.slick-prev::after {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  background-image: url("../images/ic-chevron-left.svg");
+  background-color: #f3603c;
+  width: 30px;
+  height: 35px;
+  border-radius: 0 10px 10px 0;
+  content: "";
+}
+
+.slick-next {
+  position: absolute;
+  z-index: 2;
+  top: 144px;
+  left: 99.6%;
+  border: none;
+}
+.slick-next::before {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  background-image: url("../images/ic-chevron-right.svg");
+  background-color: #f3603c;
+  width: 30px;
+  height: 35px;
+  border-radius: 10px 0 0 10px;
+  content: "";
+}
+
+/* Said end */
+/* Work start */
+.work {
+  background-image: url("../images/Rectangle13.svg");
+}
+
+.footer__span {
+  opacity: 0;
+}
+
+.footer__input:not(:placeholder-shown):not(:focus):invalid {
+  color: red;
+  border: 1px solid red;
+}
+
+.footer__input:not(:placeholder-shown):not(:focus):invalid ~ span {
+  opacity: 1;
+  color: red;
+  font-style: italic;
+}
+
+/* Work end */
+@media only screen and (min-width: 768px) {
+  .header__nav {
+    transform: translateX(0%);
+    box-shadow: none;
+    max-width: max-content;
+  }
+  .header__box {
+    max-width: max-content;
+  }
+  /* Hero start */
+  .circle {
+    background-image: url("../images/ractangle.svg");
+    background-position: calc(50% + 550px) calc(50% - 190px);
+  }
+  /* Hero end */
+  /* About start */
+  .about {
+    background-image: url("../images/ractangle.svg");
+    background-position: calc(50% - 550px) calc(50% + 300px);
+  }
+  /* About end */
+}
+@media only screen and (min-width: 1024px) {
+  .circle {
+    background-position: calc(50% + 480px) calc(50% - 140px);
+  }
+  .about {
+    background-position: calc(50% - 600px) calc(50% + 400px);
+  }
+}
+/* Header end *//*# sourceMappingURL=main.css.map */
